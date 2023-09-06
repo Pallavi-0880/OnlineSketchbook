@@ -1,13 +1,12 @@
 .parent{
     background-color: aquamarine;
     width: 600px;
-    height: 600px;
-    position: fixed;
+    height: 800px;
     left: 31%;
-    top: 14%;
+    top: 11%;
 }
-#divid{
-    background-color: black;
+.divid{
+    background-color:gold;
     height: 147px;
     width: 147px;
     display: inline-block;
