@@ -1,0 +1,14 @@
+.parent{
+    background-color: aquamarine;
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    left: 31%;
+    top: 14%;
+}
+#divid{
+    background-color: black;
+    height: 147px;
+    width: 147px;
+    display: inline-block;
+}
