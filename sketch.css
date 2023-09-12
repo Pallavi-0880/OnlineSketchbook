@@ -2,8 +2,9 @@
     /* display:inline-grid;  */
     display: grid;
     /* grid-template-columns:repeat(3,minmax( 100px,200px)); */
-    grid-template-columns: repeat(4, clamp(100px, 25%, 100px));
-    grid-template-rows: 100px;
+     /* grid-template-columns: repeat(4, clamp(100px, 25%, 100px));  */
+     grid-template-columns: repeat(auto-fit,clamp(50px, 25%, 200px));
+     grid-template-rows: 100px; 
     /* grid-template:100px 100px 100px/ 100px 100px 100px 100px;  */
     /* column-gap: 50px;
       row-gap: 50px;
@@ -12,7 +13,7 @@
     overflow: auto;
     max-width: 1020px;
     margin-inline: auto;
-    /* gap: 30px; */
+     gap: 30px; 
     grid-auto-rows: 100px;
     background-color: rgb(198, 231, 12);
     border: 1px solid black;
