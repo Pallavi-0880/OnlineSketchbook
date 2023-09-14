@@ -83,11 +83,11 @@
 
 
 
-// total.forEach((div) => {
-//     div.addEventListener('click', () => {
-// div.style.backgroundColor = "yellow";
-//     })
-// })
+//  total.forEach((div) => {
+//      div.addEventListener('click', () => {
+//  div.style.backgroundColor = "yellow";
+//      })
+//  })
 
 // document.getElementById(
 //     "try").addEventListener(
@@ -100,16 +100,35 @@
 //     }
 
 
-
-for (var i = 0; i < 4; i++) {
-  for (var j = 0; j < 4; j++) {
-    var parent = document.querySelector(".parent");
+var parent = document.querySelector(".parent");
+for (var i = 0; i < 100; i++) {
+  for (var j = 0; j < 100; j++) {
     var cell = document.createElement("div");
     cell.classList.add("cell");
     parent.appendChild(cell);
   }
 }
 
+var totalnod = document.querySelectorAll(".cell");
+console.log(totalnod);
 
+totalnod.forEach((div) => {
+  div.addEventListener("mousedown", () => {
+    mousedown = true;
+    div.style.backgroundColor = "black";
+  })
+})
 
+totalnod.forEach((div) => {
+  div.addEventListener("mouseup", () => {
+    mousedown = false;
+  })
+})
+
+totalnod.forEach((div) => {
+  div.addEventListener("mouseover", () => {
+    if (mousedown === true)
+      div.style.backgroundColor = "black";
+  })
+})
 

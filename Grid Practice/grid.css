@@ -2,19 +2,20 @@
       /* display:inline-grid;  */
       display:grid; 
       /* grid-template-columns:repeat(3,minmax( 100px,200px)); */
-      grid-template-columns: repeat(auto-fit,clamp(100px,25%,200px));
-      grid-template-rows:  150px; 
+      /* grid-template-columns: repeat(auto-fit,clamp(100px,25%,200px)); */
+      grid-template-columns: 100px,100px,100px,100px; 
+      grid-template-rows:  150px,150px,150px ;
       /* grid-template:100px 100px 100px/ 100px 100px 100px 100px;  */
       /* column-gap: 50px;
       row-gap: 50px;
       */
-      resize: both;  
+      /* resize: both;  
       overflow: auto;  
       max-width: 1020px; 
       margin-inline: auto; 
       gap: 30px;  
       grid-auto-rows:150px;
-      background-color: aqua;
+      background-color: aqua; */
 
 
 
